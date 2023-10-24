@@ -8,10 +8,19 @@ a{
     text-decoration: none;
 }
 
+
+/*----bg clr BGC-----*/
+
+.bgc{
+    background: radial-gradient(#daae62,#daae62);
+}
+
 /*---haed----*/
+
+
 .taskbar{
    height: 4em;
-   background-color:#e8e8e8; 
+   background-color:#f8f8f4; 
    display: flex;
    justify-content: space-between;  
 }
@@ -36,7 +45,7 @@ a{
     justify-content: space-evenly;
 }
 .header{
-    height: 45em;
+    height: 0em;
     background-color:#e8e8e8;
     display: flex;
     align-items: center;
@@ -44,11 +53,14 @@ a{
 }
 
 .header h1{
-    font-size: 100px;
-    color:#d8b26e;
-    letter-spacing: 30px;
+    font-size: 75px;
+    color:#ea1e1e;
+    letter-spacing: 40px;
 }
-
+#menu:hover{
+    transform: "1:1";
+    color: #ff0000;
+}
 /*---card----*/
 
 .card_full{
@@ -168,7 +180,6 @@ a{
 .slide-img{
     height: 350px;
     position: relative;
-    cursor: pointer;
 }
 .slide-img img{
     width:100%;
@@ -234,7 +245,6 @@ a{
     letter-spacing: 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0,0.2);
-    cursor: pointer;
 }
 .overlay{
     visibility: hidden;
@@ -277,7 +287,7 @@ a{
 }
 
 .logo{
-    margin-left: 2em;
+    margin-left: 45em;
     height: 4em;
     width: 8em;
     display: flex;
@@ -292,7 +302,7 @@ a{
 }
 
 .copyright{
-    margin-right: 2em;
+    margin-right: 45em;
     height: 4em;
     width: 12em;
     display: flex;
@@ -377,4 +387,89 @@ a{
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 60px;
+}
+
+/*-------------account page-------------*/
+
+.account-page{
+    padding: 50px 0;
+    background:  radial-gradient(#fff,#daae62);
+
+}
+
+
+
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+
+
+}
+
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top:130px;
+    transition: transform 1s;
+
+
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn{
+    width:100%;
+    border:none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form.btn:focus{
+    outline:none;
+    
+}
+#LoginForm{
+    left: -300px;
+
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 20px;
+}
+#Indicator{
+    width:100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
 }
